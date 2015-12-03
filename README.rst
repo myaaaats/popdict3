@@ -5,10 +5,9 @@ PopDict
 Abstruction
 ============================
 
-Textエリアに書いた英文を分解し
-単語ごとに翻訳結果を表示する。
-->将来的には文中で？
-　とりあえずいまは、単語列挙
+Textエリアに書いた英文を分解し単語ごとに翻訳結果を表示する。
+
+->将来的には文中で？とりあえずいまは、単語列挙
 
 
 
@@ -17,6 +16,7 @@ How to serve
 ============================
 
 とりあえずMacでテストしています。
+
 GNU make, rvm, bundler環境があれば起動できます。
 
 
@@ -24,9 +24,11 @@ rvm のインストール
 ----------------------------
 
 以下のHPに従って、
+
 https://rvm.io/
 
 以下のコマンドを実行
+
 \curl -sSL https://get.rvm.io | bash -s stable
 
 
@@ -34,6 +36,7 @@ ruby 環境のインストール
 ----------------------------
 
 rvm install 2.1.2
+
 rvm use 2.1.2
 
 
@@ -52,6 +55,7 @@ make setup を実行
 make serve を実行する。
 
 すると、bundle exec unicorn　が実行されるので
+
 http://127.0.0.1:8080/ にアクセスすると、dict.erb の内容が表示される。
 
 rubyのファイルいじったら毎回実行が必要
@@ -61,9 +65,10 @@ rubyのファイルいじったら毎回実行が必要
 ============================
 
 以下の仕組みを利用している
-sinatra framework : web application framework
-erb: template engine
-sequel: O/R mapper
+
+- sinatra framework : web application framework
+- erb: template engine
+- sequel: O/R mapper
 
 
 難しいことは考えなくても良いけど、

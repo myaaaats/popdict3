@@ -41,7 +41,7 @@ function convText2() {
 
 	$.ajax({
 		type: 'GET',
-		url: '/api/check/' + txt
+		url: 'api/check/' + txt
 	}).success(function (data) {
 		dct = data;
 		for (k in data) {

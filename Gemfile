@@ -1,15 +1,14 @@
 source 'https://rubygems.org'
 
-require "rubygems"
+require 'rubygems'
 
-gem "sinatra"
-gem "sinatra-contrib"
+gem 'sinatra'
+gem 'sinatra-contrib'
 
-gem "sequel"
-gem "unicorn"
+gem 'sequel'
+gem 'unicorn'
 
 gem 'sinatra-reloader'
 
 
-gem "sqlite3"
-gem 'foreman'
+gem 'sqlite3'

@@ -6,3 +6,6 @@ setup:
 
 serve:
 	bundle exec unicorn
+
+image:
+	docker build -t popdict .

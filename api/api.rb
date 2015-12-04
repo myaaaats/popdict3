@@ -1,10 +1,14 @@
 # conding: utf-8
 require "sinatra"
 require "sinatra/json"
+require "sinatra/reloader"
 
 require "./model"
 
 class Api < Sinatra::Base
+  configure :development do
+    register Sinatra::Reloader
+  end
 
   get '/dict/:word' do
   end

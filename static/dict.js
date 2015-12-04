@@ -87,8 +87,10 @@ $(document).ready(function () {
 
 // word class の要素にマウスが掛かったら、呼び出す。
 $(document).on('mouseover', '.word', function (ev) {
-
 	mapDict(ev.currentTarget.text);
+});
+$(document).on('mouseout', '.word', function (ev) {
+	mapExit();
 })
 ;
 

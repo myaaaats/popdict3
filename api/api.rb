@@ -8,7 +8,26 @@ require "./model"
 class Api < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
+    enable :sessions
+    use Rack::Session::Cookie, :key => 'rack.session',
+                               :path => '/'
+
   end
+
+
+  get '/login' do
+    session[:foo] = Time.now
+    session[:fuu] = session.id
+    puts session[:foo]
+    puts session[:fuu]
+    redirect '/'
+  end
+
+  get '/logout' do
+    session.clear
+    redirect '/'
+  end
+
 
   get '/dict/:word' do
   end
@@ -17,7 +36,7 @@ class Api < Sinatra::Base
     response = {}
     text = params["word"]
     text.chomp!
-    text_downcase = text.gsub(/[\.,?!()*:;{}~=|'&%0123456789]/,'').downcase
+    text_downcase = text.gsub(/[\.,?!()*:;{}~=|'&%0123456789]/, '').downcase
     words = text_downcase.split(" ")
     words.uniq!
 

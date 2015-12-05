@@ -15,14 +15,23 @@ class PopDict < Sinatra::Base
   set :views, settings.root + '/html'
   set :public_folder, File.dirname(__FILE__) + '/static'
 
+  configure :development do
+    register Sinatra::Reloader
+    enable :sessions
 
+  end
 
   # Index のページを表示する
   get '/' do
-    # html/dict.erb を返す。
-    # パラメーター渡すと、それ埋め込んだHTMLを生成してくれる
-    # （今回は特に使ってない）
-    erb :dict
+    if ! session[:foo]
+      puts session.to_s
+      erb :notlogin
+
+    else
+      erb :dict
+
+    end
+
   end
 
   configure :development do

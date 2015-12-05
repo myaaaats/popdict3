@@ -1,0 +1,684 @@
+I, [2015-12-05T05:29:37.906399 #11423]  INFO -- : listening on addr=0.0.0.0:8080 fd=10
+I, [2015-12-05T05:29:37.906962 #11423]  INFO -- : worker=0 spawning...
+I, [2015-12-05T05:29:37.908166 #11423]  INFO -- : worker=1 spawning...
+I, [2015-12-05T05:29:37.908933 #11423]  INFO -- : master process ready
+I, [2015-12-05T05:29:37.909341 #11424]  INFO -- : worker=0 spawned pid=11424
+I, [2015-12-05T05:29:37.909796 #11424]  INFO -- : Refreshing Gem list
+I, [2015-12-05T05:29:37.910113 #11425]  INFO -- : worker=1 spawned pid=11425
+I, [2015-12-05T05:29:37.910561 #11425]  INFO -- : Refreshing Gem list
+I, [2015-12-05T05:29:38.300339 #11425]  INFO -- : worker=1 ready
+I, [2015-12-05T05:29:38.300428 #11424]  INFO -- : worker=0 ready
+14.3.154.206 - - [05/Dec/2015:05:35:13 +0900] "GET / HTTP/1.1" 200 856 0.1028
+14.3.154.206 - - [05/Dec/2015:05:35:14 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.0326
+14.3.154.206 - - [05/Dec/2015:05:35:19 +0900] "GET /api/check/apple%20banana HTTP/1.1" 200 109 0.0596
+199.59.148.209 - - [05/Dec/2015:05:35:36 +0900] "GET / HTTP/1.1" 200 856 0.0024
+52.21.176.42 - - [05/Dec/2015:05:35:37 +0900] "GET / HTTP/1.1" 200 856 0.0055
+172.17.80.12 - - [05/Dec/2015:05:36:36 +0900] "GET / HTTP/1.1" 200 856 0.0093
+172.17.80.12 - - [05/Dec/2015:05:36:37 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.0096
+172.17.80.12 - - [05/Dec/2015:05:37:03 +0900] "GET /api/check/I%20am%20a%20girl.%20Do%20you%20know%20me HTTP/1.1" 200 2656 0.0745
+153.142.222.1 - - [05/Dec/2015:05:40:27 +0900] "GET / HTTP/1.1" 200 856 0.3667
+153.142.222.1 - - [05/Dec/2015:05:40:27 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.0038
+I, [2015-12-05T05:56:15.763934 #6851]  INFO -- : listening on addr=0.0.0.0:8080 fd=10
+I, [2015-12-05T05:56:15.770198 #6851]  INFO -- : worker=0 spawning...
+I, [2015-12-05T05:56:15.772137 #6851]  INFO -- : worker=1 spawning...
+I, [2015-12-05T05:56:15.773900 #6852]  INFO -- : worker=0 spawned pid=6852
+I, [2015-12-05T05:56:15.775174 #6852]  INFO -- : Refreshing Gem list
+I, [2015-12-05T05:56:15.778646 #6853]  INFO -- : worker=1 spawned pid=6853
+I, [2015-12-05T05:56:15.778847 #6851]  INFO -- : master process ready
+I, [2015-12-05T05:56:15.779840 #6853]  INFO -- : Refreshing Gem list
+I, [2015-12-05T05:56:17.107061 #6852]  INFO -- : worker=0 ready
+I, [2015-12-05T05:56:17.111258 #6853]  INFO -- : worker=1 ready
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:06:06:45 +0900] "GET / HTTP/1.1" 200 857 0.5987
+127.0.0.1 - - [05/Dec/2015:06:06:45 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.0538
+127.0.0.1 - - [05/Dec/2015:06:15:30 +0900] "GET / HTTP/1.1" 200 856 0.1209
+127.0.0.1 - - [05/Dec/2015:06:15:37 +0900] "GET / HTTP/1.1" 200 856 0.0136
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:6851 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+I, [2015-12-05T07:03:19.854893 #7481]  INFO -- : listening on addr=0.0.0.0:8080 fd=10
+I, [2015-12-05T07:03:19.869048 #7481]  INFO -- : worker=0 spawning...
+I, [2015-12-05T07:03:19.872265 #7481]  INFO -- : worker=1 spawning...
+I, [2015-12-05T07:03:19.874139 #7481]  INFO -- : master process ready
+I, [2015-12-05T07:03:19.874617 #7482]  INFO -- : worker=0 spawned pid=7482
+I, [2015-12-05T07:03:19.876699 #7483]  INFO -- : worker=1 spawned pid=7483
+I, [2015-12-05T07:03:19.877223 #7482]  INFO -- : Refreshing Gem list
+I, [2015-12-05T07:03:19.879148 #7483]  INFO -- : Refreshing Gem list
+I, [2015-12-05T07:03:20.983832 #7482]  INFO -- : worker=0 ready
+I, [2015-12-05T07:03:20.983840 #7483]  INFO -- : worker=1 ready
+127.0.0.1 - - [05/Dec/2015:07:20:44 +0900] "GET / HTTP/1.0" 200 856 1.4025
+127.0.0.1 - - [05/Dec/2015:07:23:44 +0900] "GET / HTTP/1.1" 200 856 0.1904
+127.0.0.1 - - [05/Dec/2015:07:23:45 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.1910
+127.0.0.1 - - [05/Dec/2015:07:23:45 +0900] "GET /favicon.ico HTTP/1.1" 404 512 0.0465
+127.0.0.1 - - [05/Dec/2015:07:24:51 +0900] "GET / HTTP/1.1" 200 856 0.0035
+127.0.0.1 - - [05/Dec/2015:07:24:51 +0900] "GET /dict.js HTTP/1.1" 304 - 0.0036
+127.0.0.1 - - [05/Dec/2015:07:25:19 +0900] "GET / HTTP/1.1" 200 856 0.0043
+127.0.0.1 - - [05/Dec/2015:07:25:19 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.0062
+127.0.0.1 - - [05/Dec/2015:19:47:29 +0900] "GET / HTTP/1.1" 200 856 0.1861
+127.0.0.1 - - [05/Dec/2015:19:47:29 +0900] "GET /dict.js HTTP/1.1" 304 - 0.0254
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:21:33:59 +0900] "GET / HTTP/1.1" 200 856 0.0377
+127.0.0.1 - - [05/Dec/2015:21:33:59 +0900] "GET /dict.js HTTP/1.1" 304 - 0.0082
+127.0.0.1 - - [05/Dec/2015:21:34:54 +0900] "GET / HTTP/1.1" 200 856 0.0345
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:21:59:33 +0900] "GET / HTTP/1.1" 200 856 0.0266
+127.0.0.1 - - [05/Dec/2015:22:07:27 +0900] "GET / HTTP/1.1" 200 856 0.0670
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:22:26:24 +0900] "GET / HTTP/1.1" 200 857 0.0062
+127.0.0.1 - - [05/Dec/2015:22:26:31 +0900] "GET /login HTTP/1.1" 404 506 0.0053
+127.0.0.1 - - [05/Dec/2015:22:26:31 +0900] "GET /__sinatra__/404.png HTTP/1.1" 200 18893 0.1895
+127.0.0.1 - - [05/Dec/2015:22:27:06 +0900] "GET / HTTP/1.1" 200 857 0.0141
+2015-12-05 22:27:10 - LoadError - cannot load such file -- ../model.rb:
+	/Library/WebServer/CGI-Executables/popdict/api/api.rb:6:in `require'
+	/Library/WebServer/CGI-Executables/popdict/api/api.rb:6:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `require'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `block in perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:224:in `block in registered'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `[]'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `block in filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1083:in `block in dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:22:27:10 +0900] "GET /api/check/ditty HTTP/1.1" 500 169337 0.5265
+127.0.0.1 - - [05/Dec/2015:22:27:15 +0900] "GET / HTTP/1.1" 200 857 0.0261
+2015-12-05 22:27:19 - LoadError - cannot load such file -- ../model.rb:
+	/Library/WebServer/CGI-Executables/popdict/api/api.rb:6:in `require'
+	/Library/WebServer/CGI-Executables/popdict/api/api.rb:6:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `require'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `block in perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:224:in `block in registered'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `[]'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `block in filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1083:in `block in dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:22:27:19 +0900] "GET /api/check/ditty HTTP/1.1" 500 169337 0.1396
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:22:32:08 +0900] "GET / HTTP/1.0" 200 857 0.0908
+2015-12-05 22:32:15 - LoadError - cannot load such file -- ../model.rb:
+	/Library/WebServer/CGI-Executables/popdict/api/api.rb:6:in `require'
+	/Library/WebServer/CGI-Executables/popdict/api/api.rb:6:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `require'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `block in perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:224:in `block in registered'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `[]'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `block in filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1083:in `block in dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:22:32:15 +0900] "GET /api/check/ditty HTTP/1.1" 500 169337 0.3517
+127.0.0.1 - - [05/Dec/2015:22:32:17 +0900] "GET /cgi-bin/dict/dict.cgi?word=undefined HTTP/1.1" 404 532 0.0030
+127.0.0.1 - - [05/Dec/2015:22:33:23 +0900] "GET /login HTTP/1.1" 404 506 0.0024
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:23:04:59 +0900] "GET /login HTTP/1.1" 404 506 0.0107
+127.0.0.1 - - [05/Dec/2015:23:05:20 +0900] "GET /login HTTP/1.1" 404 506 0.0037
+127.0.0.1 - - [05/Dec/2015:23:05:21 +0900] "GET /favicon.ico HTTP/1.1" 404 512 0.0360
+127.0.0.1 - - [05/Dec/2015:23:06:09 +0900] "GET / HTTP/1.1" 200 856 0.0293
+127.0.0.1 - - [05/Dec/2015:23:06:09 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.0194
+127.0.0.1 - - [05/Dec/2015:23:06:16 +0900] "GET /login HTTP/1.1" 404 506 0.0034
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [05/Dec/2015:23:13:19 +0900] "GET / HTTP/1.0" 200 856 0.0872
+127.0.0.1 - - [05/Dec/2015:23:13:32 +0900] "GET /login HTTP/1.1" 404 506 0.0130
+127.0.0.1 - - [05/Dec/2015:23:13:35 +0900] "GET /login HTTP/1.1" 404 506 0.0054
+127.0.0.1 - - [05/Dec/2015:23:14:19 +0900] "GET /login HTTP/1.1" 404 506 0.0027
+127.0.0.1 - - [05/Dec/2015:23:14:20 +0900] "GET /__sinatra__/404.png HTTP/1.1" 200 18893 0.2821
+127.0.0.1 - - [05/Dec/2015:23:18:03 +0900] "GET / HTTP/1.1" 200 856 0.1551
+127.0.0.1 - - [05/Dec/2015:23:18:03 +0900] "GET / HTTP/1.1" 200 856 0.0208
+127.0.0.1 - - [05/Dec/2015:23:18:03 +0900] "GET /dict.js HTTP/1.1" 200 2051 0.2385
+127.0.0.1 - - [05/Dec/2015:23:18:03 +0900] "GET /favicon.ico HTTP/1.1" 404 512 0.0047
+127.0.0.1 - - [05/Dec/2015:23:18:04 +0900] "GET /api/login HTTP/1.1" 302 - 2.0325
+127.0.0.1 - - [05/Dec/2015:23:18:07 +0900] "GET /api/login HTTP/1.1" 302 - 0.0649
+127.0.0.1 - - [05/Dec/2015:23:18:07 +0900] "GET / HTTP/1.1" 200 856 0.0097
+127.0.0.1 - - [05/Dec/2015:23:18:08 +0900] "GET /dict.js HTTP/1.1" 304 - 0.0046
+127.0.0.1 - - [05/Dec/2015:23:18:20 +0900] "GET / HTTP/1.1" 200 856 0.0770
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+127.0.0.1 - - [05/Dec/2015:23:18:32 +0900] "GET /api/login HTTP/1.1" 302 - 0.5439
+127.0.0.1 - - [05/Dec/2015:23:18:32 +0900] "GET / HTTP/1.1" 200 856 0.0305
+127.0.0.1 - - [05/Dec/2015:23:31:25 +0900] "GET /api/login HTTP/1.1" 302 - 0.2183
+127.0.0.1 - - [05/Dec/2015:23:31:25 +0900] "GET / HTTP/1.1" 200 856 0.0189
+127.0.0.1 - - [05/Dec/2015:23:58:58 +0900] "GET / HTTP/1.1" 200 856 0.0214
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [06/Dec/2015:00:06:31 +0900] "GET / HTTP/1.1" 200 856 0.0392
+127.0.0.1 - - [06/Dec/2015:00:06:34 +0900] "GET / HTTP/1.1" 200 856 0.0039
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+127.0.0.1 - - [06/Dec/2015:00:06:35 +0900] "GET /api/login HTTP/1.1" 302 - 0.2334
+127.0.0.1 - - [06/Dec/2015:00:06:35 +0900] "GET / HTTP/1.1" 200 856 0.0050
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [06/Dec/2015:00:40:57 +0900] "GET /api/login HTTP/1.1" 302 - 0.0632
+127.0.0.1 - - [06/Dec/2015:00:40:57 +0900] "GET / HTTP/1.1" 200 856 0.0145
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+127.0.0.1 - - [06/Dec/2015:00:48:55 +0900] "GET /api/login HTTP/1.1" 302 - 0.1844
+127.0.0.1 - - [06/Dec/2015:00:48:55 +0900] "GET / HTTP/1.1" 200 856 0.2017
+127.0.0.1 - - [06/Dec/2015:00:49:22 +0900] "GET / HTTP/1.1" 200 856 0.0390
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+127.0.0.1 - - [06/Dec/2015:00:49:25 +0900] "GET /api/login HTTP/1.1" 302 - 0.0659
+127.0.0.1 - - [06/Dec/2015:00:49:25 +0900] "GET / HTTP/1.1" 200 856 0.0050
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+127.0.0.1 - - [06/Dec/2015:01:40:44 +0900] "GET /api/login HTTP/1.1" 302 - 0.2158
+127.0.0.1 - - [06/Dec/2015:01:40:45 +0900] "GET / HTTP/1.1" 200 856 0.0573
+127.0.0.1 - - [06/Dec/2015:01:40:45 +0900] "GET /dict.js HTTP/1.1" 304 - 0.0154
+/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:195:in `pid=': Already running on PID:7481 (or pid=/Library/WebServer/CGI-Executables/popdict/pids/unicorn.pid is stale) (ArgumentError)
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:127:in `start'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	from /Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+2015-12-06 01:46:50 - SyntaxError - /Library/WebServer/CGI-Executables/popdict/api/api.rb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+  'Welcome to a secret page, #{env['REMOTE_USER']}!'
+                                               ^:
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `require'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `block in perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:224:in `block in registered'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `[]'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `block in filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1083:in `block in dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [06/Dec/2015:01:46:50 +0900] "GET /api/login HTTP/1.1" 500 186347 0.5033
+        SECURITY WARNING: No secret option provided to Rack::Session::Cookie.
+        This poses a security threat. It is strongly recommended that you
+        provide a secret to prevent exploits that may be possible from crafted
+        cookies. This will not be supported in future versions of Rack, and
+        future versions will even invalidate your existing user cookies.
+
+        Called from: /Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/builder.rb:86:in `new'.
+2015-12-06 01:46:53 - SyntaxError - /Library/WebServer/CGI-Executables/popdict/api/api.rb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+  'Welcome to a secret page, #{env['REMOTE_USER']}!'
+                                               ^:
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `require'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `block in perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:224:in `block in registered'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `[]'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `block in filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1083:in `block in dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [06/Dec/2015:01:46:53 +0900] "GET /api/secret HTTP/1.1" 500 186911 0.1414
+2015-12-06 01:46:53 - SyntaxError - /Library/WebServer/CGI-Executables/popdict/api/api.rb:32: syntax error, unexpected tCONSTANT, expecting keyword_end
+  'Welcome to a secret page, #{env['REMOTE_USER']}!'
+                                               ^:
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `require'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:238:in `block in perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:234:in `perform'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-contrib-1.4.6/lib/sinatra/reloader.rb:224:in `block in registered'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1610:in `block in compile!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `[]'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1014:in `block in process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1012:in `process_route'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `block in filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:965:in `filter!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1083:in `block in dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1081:in `dispatch!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `block in call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `block in invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `catch'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1066:in `invoke'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:906:in `call!'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:894:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/xss_header.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/path_traversal.rb:16:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/json_csrf.rb:18:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/base.rb:49:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-protection-1.5.3/lib/rack/protection/frame_options.rb:31:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:225:in `context'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/session/abstract/id.rb:220:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/nulllogger.rb:9:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/head.rb:13:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/show_exceptions.rb:21:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:181:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:2021:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1795:in `synchronize'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:1486:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:66:in `block in call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `each'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/urlmap.rb:50:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/tempfile_reaper.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:49:in `_call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/lint.rb:37:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/showexceptions.rb:24:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/commonlogger.rb:33:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/sinatra-1.4.6/lib/sinatra/base.rb:218:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/chunked.rb:54:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/rack-1.6.4/lib/rack/content_length.rb:15:in `call'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:562:in `process_client'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:658:in `worker_loop'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:508:in `spawn_missing_workers'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/lib/unicorn/http_server.rb:132:in `start'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/gems/unicorn-5.0.1/bin/unicorn:126:in `<top (required)>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `load'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/unicorn:23:in `<main>'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `eval'
+	/Users/akihiros/.rvm/gems/ruby-2.1.2/bin/ruby_executable_hooks:15:in `<main>'
+127.0.0.1 - - [06/Dec/2015:01:46:53 +0900] "GET /api/__sinatra__/500.png HTTP/1.1" 500 186053 0.3090

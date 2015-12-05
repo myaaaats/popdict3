@@ -1,9 +1,9 @@
 # conding: utf-8
-require "sinatra"
-require "sinatra/json"
-require "sinatra/reloader"
+require 'sinatra'
+require 'sinatra/json'
+require 'sinatra/reloader'
 
-require "./model"
+require './model'
 
 require 'sinatra'
 
@@ -24,19 +24,15 @@ class Api < Sinatra::Base
 
   end
 
-
-get '/secret' do
-  not_authentication = authenticate
-  return not_authentication if not_authentication
-
-  'Welcome to a secret page, #{env['REMOTE_USER']}!'
-end
-
-  get '/login' do
-    session[:foo] = Time.now
-    session[:id] = session.id
-    puts session[:foo]
-    puts session[:id]
+  post '/login' do
+    puts params
+    puts params[:name]
+    if params.has_key?('name')
+      # ToDo : implement authentication method
+      name = params[:name]
+      session[:id] = name
+      puts session[:id]
+    end
     redirect '/'
   end
 
@@ -51,10 +47,10 @@ end
 
   get '/check/:word' do
     response = {}
-    text = params["word"]
+    text = params['word']
     text.chomp!
     text_downcase = text.gsub(/[\.,?!()*:;{}~=|'&%0123456789]/, '').downcase
-    words = text_downcase.split(" ")
+    words = text_downcase.split(' ')
     words.uniq!
 
     # db に繰り返し問い合わせ
@@ -73,7 +69,7 @@ end
 
 
   get '/sequence' do
-    "test"
+    'test'
   end
 
   $logger = Logger.new(STDOUT)

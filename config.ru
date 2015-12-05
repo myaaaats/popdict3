@@ -18,18 +18,16 @@ class PopDict < Sinatra::Base
   configure :development do
     register Sinatra::Reloader
     enable :sessions
-
+    use Rack::Session::Cookie, :path => '/'
   end
 
   # Index のページを表示する
   get '/' do
-    if ! session[:foo]
-      puts session.to_s
+    if ! session.has_key?('id')
       erb :notlogin
 
     else
-      erb :dict
-
+      erb :dict, :locals => {:name => session[:id]}
     end
 
   end

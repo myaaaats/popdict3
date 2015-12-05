@@ -2,6 +2,9 @@
 require 'sinatra'
 require 'sinatra/json'
 require 'sinatra/reloader'
+require 'sinatra/cookies'
+
+require 'pp'
 
 require './model'
 
@@ -17,27 +20,32 @@ helpers do
 end
 
 class Api < Sinatra::Base
+  helpers Sinatra::Cookies
+
   configure :development do
     register Sinatra::Reloader
-    enable :sessions
-    use Rack::Session::Cookie, :path => '/'
-
+    set :sessions, true
+    use Rack::Session::Cookie,
+        :path => '/',
+        :secret => 'change'
   end
 
   post '/login' do
-    puts params
-    puts params[:name]
+    pp params
+    pp session
     if params.has_key?('name')
       # ToDo : implement authentication method
       name = params[:name]
       session[:id] = name
-      puts session[:id]
+      cookies[:name] = name
     end
+    pp session
     redirect '/'
   end
 
   get '/logout' do
     session.clear
+    pp session
     redirect '/'
   end
 
@@ -58,8 +66,6 @@ class Api < Sinatra::Base
 
       entry = find_by(word)
       if not entry.nil?
-        puts entry
-        puts entry[:mean]
         response[word] = entry[:mean]
       end
     end
@@ -67,11 +73,11 @@ class Api < Sinatra::Base
     json response
   end
 
+  post '/track' do
+    puts "#{cookies[:name]} mouseover #{params[:word]}"
+  end
 
   get '/sequence' do
     'test'
   end
-
-  $logger = Logger.new(STDOUT)
-
 end

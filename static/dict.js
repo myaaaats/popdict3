@@ -72,6 +72,15 @@ function mapDict(wd) {
 		element = $("#display")[0];
 		element.innerHTML = dct[wd];
 	}
+
+	$.ajax({
+		type: 'POST',
+		url: '/api/track',
+		data: {
+			'word': wd
+		}
+	})
+
 }
 
 function mapExit() {
@@ -82,6 +91,7 @@ function mapExit() {
 
 //ページのロードが完了したら、呼び出す。
 $(document).ready(function () {
+	console.log($.cookie)
 	resetDict();
 });
 

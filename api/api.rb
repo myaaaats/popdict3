@@ -29,6 +29,9 @@ class Api < Sinatra::Base
         :path => '/',
         :secret => 'change'
   end
+  get '/login' do
+    redirect '/'
+  end
 
   post '/login' do
     pp params
@@ -73,6 +76,9 @@ class Api < Sinatra::Base
     json response
   end
 
+  get '/track' do
+    redirect '/'
+  end
   post '/track' do
     puts "#{cookies[:name]} mouseover #{params[:word]}"
   end

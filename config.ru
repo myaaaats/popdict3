@@ -2,6 +2,7 @@
 require 'rubygems'
 require 'sinatra/base'
 require 'sinatra/reloader'
+require 'pp'
 
 require './model'
 require './api/api'
@@ -12,6 +13,8 @@ $stdout.sync = true
 
 map('/api') { run Api }
 class PopDict < Sinatra::Base
+  helpers Sinatra::Cookies
+
   set :views, settings.root + '/html'
   set :public_folder, File.dirname(__FILE__) + '/static'
 
@@ -23,6 +26,8 @@ class PopDict < Sinatra::Base
 
   # Index のページを表示する
   get '/' do
+    pp cookies
+    pp session
     if ! session.has_key?('id')
       erb :notlogin
 
